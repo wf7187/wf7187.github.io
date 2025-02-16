@@ -1,217 +1,571 @@
-欢迎访问我的第一个网站页面。
-<!--
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <title>InsCode</title>
-</head>
-<body>
-    <div class="container">
-        <img src="src/assets/logo.svg" alt="InsCode">
-        <div>欢迎来到 Github</div>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
-
--->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="奇妍信息，it行业信息，网络信息搜罗，NAS存储，个人、家庭存储，国产linux系统使用问题解决方案">
-    <meta name="keywords" content="国产系统，信息，linux，it，科技">
-    <!-- <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <meta name="format-detection" content="telephone=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"> -->
-    <link rel="stylesheet" href="./default.css">
-    <!-- <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 600px)" href="style/css/css600.css"> -->
-    <!-- <link rel="stylesheet" type="text/css" media="screen and (min-width: 600px) and (max-device-width: 980px)" href="css600-980.css">  -->
-    <!-- <link rel="stylesheet" href="./ceshi.css"> -->
-    <!-- <link rel="stylesheet" href="./div0box.css"> -->
-    <!-- <link rel="stylesheet" href="./id.css"> -->
-    <!-- <link rel="stylesheet" href="./base.css"> -->
-    <!-- <link rel="alternate" media="only screen and (max-width:640px)" href="https://wf7187.pages.dev/"> -->
-    <link rel="canonical" href="https://wf7187.pages.dev/">
-    <!-- <script type="text/javascript" src="main.js"></script> -->
-    <!-- <link href="favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" /> -->
-    <!-- <link href="favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" /> -->
-    <!-- <link href="favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" /> -->
-    <!-- <link rel="icon" href="./logo.ico" type="image/x-icon"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4313941_llvgbcz0pog.css">
+    <title>响应式布局学习</title>
+    <style>
+        /* 去掉下划线 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" ,
-        maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+        html {
+            font-size: 62.5%;
+            padding: 0 5px;
+            /* position: relative; */
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        img,
+        input,
+        button {
+            border: none;
+            vertical-align: middle;
+        }
+
+        .home {
+            position: absolute;
+            padding-left: 40px;
+        }
 
 
-    <title>奇妍信息主站</title>
-    <!-- <script src="1.js" defer></script> -->
+        body {
+            margin: 0 auto;
+            /* padding: 5px; */
+            width: 100vw;
+            max-width: 100%;
+            /* height: 100vh; */
+            font-size: 1.4rem;
+        }
 
+        li {
+            list-style: none;
+        }
+
+
+
+        :root {
+            --bgcolor: #FFC42B;
+        }
+
+        .header {
+            background-color: #2e2e2e;
+            height: 6rem;
+            /* color: #fff; */
+            top: 0;
+            position: sticky;
+        }
+
+        .header-item {
+            display: flex;
+            height: 6rem;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        .header-item a {
+            color: var(--bgcolor);
+        }
+
+        .header-item .logo {
+            flex: 1;
+        }
+
+        .header-item .logo img {
+            max-height: 5rem;
+        }
+
+        /* 头部导航栏隐藏 */
+        .header-show {
+            /* padding-top:1rem; */
+            padding-left: 40px;
+            line-height: 6rem;
+            display: none;
+            /* color: #2e2e2e; */
+        }
+
+        .header-show ul li {
+            display: inline-block;
+
+        }
+
+        .header-show ul li a {
+            color: var(--bgcolor);
+        }
+
+        .nav {
+            background-color: #f7f7f7;
+            /* padding-bottom: 20px; */
+
+        }
+
+        .content {
+            display: flex;
+        }
+
+        /* 菜单左边 */
+        .left {
+            width: 15%;
+            border: 1px solid #d0d0d0;
+            box-shadow: 0 5px 10px #d0d0d0;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .left li {
+            padding: 20px;
+            border-bottom: 1px solid #d0d0d0;
+        }
+
+        /* .left ul {
+            padding-left: 20px;
+        } */
+
+        .left li a:hover {
+            color: var(--bgcolor);
+
+        }
+
+        /* 菜单右边 */
+        /* flex布局需要嵌套多个div,可以采用网格布局 */
+        /* 网格布局,先确定行和列数  父元素 先display flex */
+        .right {
+            width: 100%;
+
+        }
+
+        .right ul {
+            /* display:flex ; */
+            display: grid;
+            width: 100%;
+            height: 100%;
+            /* grid-template-columns: 100px 100px 300px 400px;定义各列列宽 */
+            grid-template-columns: repeat(4, 1fr);
+            /* 各列宽度相等 可以这样定义 */
+            /* 网格布局内元素间的间距放在容器属性里 */
+            gap: 5px;
+            /* 行和列边距 */
+            padding: 0;
+
+
+        }
+
+        .right ul img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* 防止图片拉伸变形 */
+        }
+
+        .right ul li:nth-child(1) {
+            grid-row: 1/3;
+            /* 第一列上下两行合并 */
+        }
+
+        .right ul li:last-child {
+            grid-row: 1/3;
+            /* 最后一列上下两行合并 */
+            grid-column: 4/5;
+            /* 最后一列上下两行合并,并放在第四列 */
+        }
+
+        /* 今日热门 */
+        .hot ul {
+            margin-top: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .hot ul li {
+            width: calc(100%/4 - 20px);
+            border: 1px solid #d5d5d5;
+        }
+
+        .hot-img {
+            overflow: hidden;
+        }
+
+        .hot-img img {
+            width: 100%;
+            height: auto;
+            transition: all 0.6s linear;
+        }
+
+        .hot-img img:hover {
+            transform: scale(1.5);
+
+        }
+
+        /* 表格排行榜 */
+
+        table {
+            margin: 0.5rem;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-collapse: collapse;
+        }
+
+        /* 表头的样式 */
+        table th {
+            background-color: #f5f5f5;
+            padding: 15px;
+        }
+
+        table td {
+            padding: 15px;
+            text-align: center;
+        }
+
+        table tr td,
+        th {
+            border: 1px solid #ccc;
+        }
+
+        /* 斑马纹.奇数行 偶数行不同 */
+        table tr:nth-child(even) {
+            background-color: #f5f5f5;
+        }
+
+        @media(min-width:992px) {
+
+            .container {
+                max-width: 100vw;
+                margin: auto;
+            }
+        }
+
+        @media(max-width:992px) {
+
+            /* body{
+        max-width: 100%;
+    } */
+            .container {
+                max-width: 960px;
+                margin: auto;
+            }
+
+            /*头部logo隐藏*/
+            .header-item {
+                display: none;
+            }
+
+            .header-show {
+                display: block;
+                line-height: 6rem;
+            }
+
+            /* 左侧导航栏隐藏 */
+            .left {
+                display: none;
+            }
+
+            /* 右侧宽度改变 */
+            .right {
+                width: 100%;
+            }
+        }
+
+        @media(max-width: 768px) {
+
+            /* body{
+        max-width: 100%;
+    } */
+            .container {
+                /* max-width: 700px; */
+                margin: auto;
+            }
+
+            /* 右边六图 */
+            .right ul {
+                grid-template-columns: repeat(2, 1fr);
+                /* 变成两列 */
+            }
+
+            .right ul li:nth-child(1) {
+                grid-column: 1/3;
+                /* 第一行 */
+            }
+
+            .right ul li:last-child {
+                grid-column: 1/3;
+                grid-row: 5;
+            }
+
+            /* 今日热门 */
+            /* 父元素flex布局,要换行需要给父元素添加换行 */
+            .hot ul {
+                gap: 10px;
+                /* 更改行间距 */
+            }
+
+            .hot ul li {
+                width: calc(100%/2 - 20px);
+            }
+
+            /* 头部下拉菜单 */
+            .header-show {
+                position: relative;
+            }
+
+            .header-show ul {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 10rem;
+                background-color: #2e2e2e;
+            }
+
+            /* li隐藏 */
+            .header-show ul li {
+                display: none;
+            }
+
+            /* 图标不隐藏 */
+            .header-show .current {
+                display: block;
+                padding-left: 40px;
+            }
+
+            /* 鼠标移入效果 */
+            .header-show ul:hover li {
+                display: block;
+            }
+
+            .header-show ul:hover li a {
+                display: block;
+                /* padding: 10px; */
+            }
+
+            /* 表格的响应 */
+            table {
+                width: 100%;
+                border: 0;
+            }
+
+            /* 表头隐藏 */
+            table thead {
+                display: none;
+            }
+
+            table tr {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            table td {
+                position: relative;
+                border-bottom: 10px;
+                display: block;
+                text-align: right;
+            }
+
+            table td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 10px;
+                font-weight: 700;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <!-- 上部颜色横条 -->
-    <div class="bg0">
-        <!-- 左上角logo 结束 -->
-        <div class="top0">
-            <div> <a href="./iptv/sdiptv.m3u" target="_blank"><img class="logo" src="./imges/logo.ico"></a></div>
+    <!-- 响应式开发设备屏幕屏幕尺寸划分 -->
+    <!-- 超小屏幕(手机)          <768px;
+    校屏设备(平板)               >=768px ~ 992px;
+    中等屏幕(桌面显示器)          >=992px ~ <1200px;
+    宽屏设备(大桌面显示器)        >=1200OX;
+ -->
 
-            <!--  左上角logo 结束 -->
-
-            <div class="nav">
-                <div class="wrap">
-                    <ul class="nav-left">
-                        <li><a href="#" target="_blank">首 页</a><span>|</span> </li>
-                        <li>
-                            <a href="#" target="_blank">简 介</a><span>|</span>
-                            <div class="sec-nav">
-                                <div class="secnav-a">
-                                    <a href="https://wf7187.pages.dev" target="_blank"></a><img src="./imges/zwtp1.png"
-                                        alt="个人简介">
-                                    <p>个人简介</p>
-
-                                </div>
-
-                                <div class="secnav-a">
-                                    <a href="#" target="_blank"></a><img src="./imges/zwtp1.png" alt="公司介绍">
-                                    <p>公司介绍</p>
-                                </div>
-                            </div>
-
-                            <div class="sanjiao-0"></div>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank">国产系统</a><span>|</span>
-                            <div class="sec-nav">
-                                <div class="secnav-a"><a href="#" target="_blank"></a><img src="./imges/zwtp1.png"
-                                        alt="UOS">
-                                    <p>深度UOS</p>
-                                </div>
-
-                                <div class="secnav-a"><img src="./imges/zwtp1.png" alt="OpenKylin">
-                                    <p>开放麒麟</p>
-                                </div>
-
-                                <div class="secnav-a"><img src="./imges/zwtp1.png" alt="个人简介">
-                                    <p>个人简介</p>
-                                </div>
-
-                                <div class="secnav-a"><img src="./imges/zwtp1.png" alt="公司介绍">
-                                    <p>公司介绍</p>
-
-                                </div>
-
-                                <div class="sanjiao-0"></div>
-                            </div>
-
-                            <div class="sanjiao-0"></div>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank">linux</a><span>|</span>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank">Windows</a><span></span>
-                        </li>
-                    </ul>
-                    <ul class="nav-right">
-                        <li><a href="#" target="_blank">注册登录</a><span>|</span></li>
-                        <div class="search">
-                            <div class="searchBox">
-                                <input type="text" class="searchTerm" placeholder="你想找什么?">
-                                <button type="submit" class="searchButton">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </div>
-                        </div>
+    <div class="layout">
+        <div class="header">
+            <div class="container">
+                <div class="header-item">
+                    <a href="#" class="home">首页</a>
+                    <div class="logo">
+                        <img src="../imges/ico2.png" alt="">
+                    </div>
+                </div>
+                <div class="header-show">
+                    <ul>
+                        <li class="current"><a href="#"><i class="iconfont icon-caidan2"></i></a></li>
+                        <li><a href="#">导航1</a></li>
+                        <li><a href="#">导航2</a></li>
+                        <li><a href="#">导航3</a></li>
+                        <li><a href="#">导航4</a></li>
+                        <li><a href="#">导航5</a></li>
+                        <li><a href="#">导航6</a></li>
+                        <li><a href="#">导航7</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="div2">
-            <div class="div-leftSide">
-                <br>
-                <h2> 左侧边栏</h2> <br>
-                <ul class="left-ul">
-                    <li class="left-li">
-                        <a title="左侧边栏信息列表1" href="#">左侧边栏信息列表1</a>
-                    </li>
-                    <li>
-                        <a title="左侧边栏信息列表1" href="#">左侧边栏信息列表2</a>
-                    </li>
-                    <li>
-                        <a title="左侧边栏信息列表1" href="#">左侧边栏信息列表3</a>
-                    </li>
-                    <li>
-                        <a title="左侧边栏信息列表1" href="#">左侧边栏信息列表4</a>
-                    </li>
-                    <li>
-                        <a title="左侧边栏信息列表1" href="#">左侧边栏信息列表5</a>
-                    </li>
-                    <li>
-                        <a title="左侧边栏信息列表1" href="#">左侧边栏信息列表6</a>
-                    </li>
-                    <li>
-                        <a title="左侧边栏信息列表1" href="#">左侧边栏信息列表7</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="div-rightTop">
-                <div class="div-rightTop-img-container">
-                    <img src="./imges/baner01.jpg" alt="">
-                    <img src="./imges/baner02.jpg" alt="">
-                    <img src="./imges/baner03.jpg" alt="">
-                    <img src="./imges/baner04.jpg" alt="">
-                    <img src="./imges/baner05.jpg" alt="">
+        <!-- 第二个模块 -->
+        <section class="nav">
+            <div class="container">
+                <div class="content">
+                    <div class="left">
+                        <ul>
+                            <li>
+                                <a href="#">全部分类</a>
+                            </li>
+                            <li>
+                                <a href="#">全部分类</a>
+                            </li>
+                            <li>
+                                <a href="#">全部分类</a>
+                            </li>
+                            <li>
+                                <a href="#">全部分类</a>
+                            </li>
+                            <li>
+                                <a href="#">全部分类</a>
+                            </li>
+                            <li>
+                                <a href="#">全部分类</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <!-- <li><img src="../imges/img001.jpg" alt=""></li> -->
+                            <li>
+                                <picture>
+                                    <source media="(min-width:768px)"
+                                        srcset="https://pic4.zhimg.com/100/v2-7b7fad0e60c82baf5643c07e6f4cee2f_r.jpg">
+                                    <source media="(max-width:768px)"
+                                        srcset="https://pic4.zhimg.com/100/v2-7b7fad0e60c82baf5643c07e6f4cee2f_xl.jpg">
+                                    <img src="https://pic4.zhimg.com/100/v2-7b7fad0e60c82baf5643c07e6f4cee2f_r.jpg"
+                                        alt="Flowers" style="width:100%;">
+                                </picture>
+                            </li>
+                            <li><img src="https://pic4.zhimg.com/100/v2-2a366d57be457470c38cb08de1379551_r.jpg" alt="">
+                            </li>
+                            <li><img src="https://pic2.zhimg.com/100/v2-81234ef2f9d4e43b3e70692bf09d6a8f_r.jpg" alt="">
+                            </li>
+                            <li><img src="https://pic2.zhimg.com/100/v2-bfe92de27c2a7cb9c1d4adf606a2916d_r.jpg" alt="">
+                            </li>
+                            <li><img src="https://pic2.zhimg.com/100/v2-f0d84952c499c234718d935ab4847bdb_r.jpg" alt="">
+                            </li>
+                            <li><img src="https://pic4.zhimg.com/100/v2-72ede658bca994022b6bfc5c9f1f4a3d_r.jpg" alt="">
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
-            <div class="div-rightBody">
-                <br>
-                <h2> 右侧边栏</h2> <br>
-                <ul class="left-ul">
-                    <li class="left-li">
-                        <a title="左侧边栏信息列表1" href="#">左侧边栏信息列表1</a>
-                    </li>
-                    <li>
-                        <a title="左侧边栏信息列表1" href="#">左侧边栏信息列表2</a>
-                    </li>
-                    <li>
-                        <a title="左侧边栏信息列表1" href="#">左侧边栏信息列表3</a>
-                    </li>
-                    <li>
-                        <a title="左侧边栏信息列表1" href="#">左侧边栏信息列表4</a>
-                    </li>
-                    <li>
-                        <a title="左侧边栏信息列表1" href="#">左侧边栏信息列表5</a>
-                    </li>
-                    <li>
-                        <a title="左侧边栏信息列表1" href="#">左侧边栏信息列表6</a>
-                    </li>
-                    <li>
-                        <a title="左侧边栏信息列表1" href="#">左侧边栏信息列表7</a>
-                    </li>
-                </ul>
+        </section>
+        <!-- 今日热门 -->
+        <section>
+            <div class="container">
+                <div class="hot">
+                    <h2>今日热门</h2>
+                    <ul>
+                        <li>
+                            <div class="hot-img">
+                                <img src="https://t7.baidu.com/it/u=2665805718,4204948585&fm=193&f=GIF" alt="">
+                            </div>
+                            <div class="hot-title">
+                                <h4>测试标题上</h4>
+                                <p>测试标题下</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hot-img">
+                                <img src="https://t7.baidu.com/it/u=3550959347,4107058535&fm=193&f=GIF" alt="">
+                            </div>
+                            <div class="hot-title">
+                                <h4>测试标题上</h4>
+                                <p>测试标题下</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hot-img">
+                                <img src="https://t7.baidu.com/it/u=993577982,1027868784&fm=193&f=GIF" alt="">
+                            </div>
+                            <div class="hot-title">
+                                <h4>测试标题上</h4>
+                                <p>测试标题下</p>
+                            </div>
+                        </li>
+                        </li>
+                        <li>
+                            <div class="hot-img">
+                                <img src="https://img.zcool.cn/community/01082755559fc80000009af0ccd256.jpg@1280w_1l_2o_100sh.jpg"
+                                    alt="">
+                            </div>
+                            <div class="hot-title">
+                                <h4>测试标题上</h4>
+                                <p>测试标题下</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
-            <div class="div-bottom1">底部 一层</div>
-        </div>
-
-
-
-        <div class="div-bottom2">底部 二层</div>
-        <div class="div-bottom3">底部 三层</div>
-        <div class="div-footer">页 脚 栏</div>
-
+        </section>
+        <!-- 表格 -->
+        <section>
+            <div class="container">
+                <div class="ranking"></div>
+                <h2>排行榜</h2>
+                <table>
+                    <!-- 表格标题 caption -->
+                    <caption>2023排行榜</caption>
+                    <thead>
+                        <tr>
+                            <th>排名</th>
+                            <th>电视剧</th>
+                            <th>上映事件</th>
+                            <th>热度</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="排名">11</td>
+                            <td data-label="电视剧">22</td>
+                            <td data-label="上映时间">33</td>
+                            <td data-label="热度">44</td>
+                        </tr>
+                        <tr>
+                            <td data-label="排名">111</td>
+                            <td data-label="电视剧">222</td>
+                            <td data-label="上映时间">333</td>
+                            <td data-label="热度">444</td>
+                        </tr>
+                        <tr>
+                            <td data-label="排名">1111</td>
+                            <td data-label="电视剧">2222</td>
+                            <td data-label="上映时间">3333</td>
+                            <td data-label="热度">4444</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
     </div>
+    <script>
+        let Ptr = document.querySelectorAll(".right img,.hot img");
+        for (let i = 0; i < Ptr.length; i++) {
+            Ptr[i].onclick = function () {
+                window.open(this.src)
+            }
+        }
+
+    </script>
+
+
+
 </body>
 
 </html>
