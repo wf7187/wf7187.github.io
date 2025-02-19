@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="1" tvg-name="辉辉妍妍" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV1.png" group-title="辉哥妍姐",中央一台
+http://150.138.8.143/00/SNM/CHANNEL00000311/index.m3u8
 #EXTINF:-1 tvg-id="1" tvg-name="辉辉妍妍" tvg-logo="https://gitlab.com/uploads/-/system/user/avatar/16930155/avatar.png" group-title="辉哥妍姐",2023.09.10谷里时尚买手节童装品牌日
 https://live.video.weibocdn.com/76ceff35-0887-4d53-9ac9-7c12db2f5782_index.m3u8
 #EXTINF:-1 tvg-id="1" tvg-name="辉辉妍妍" tvg-logo="https://5b0988e595225.cdn.sohucs.com/images/20191129/4d95708a342946519fefa42033240089.jpeg" group-title="辉哥妍姐",《哪吒之魔童闹海》线路一
