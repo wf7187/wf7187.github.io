@@ -15,8 +15,8 @@ https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
 https://lx-sycdn.kuwo.cn/416ccfe9c654ada1e4f396298f8b6e79/67c122c4/resource/m3/33/80/3441260547.mp4
 #EXTINF:-1 tvg-id="1" tvg-name="辉辉妍妍" tvg-logo="https://wx2.sinaimg.cn/mw1024/6ee583acly8gregxxnubjj20e80e8tdl.jpg" group-title="辉哥妍姐",2023父亲节
 https://live.video.weibocdn.com/69b21df1-535f-4af3-98cf-320d00b8d653_index.m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="辉辉妍妍" tvg-logo="https://i2.hdslb.com/bfs/archive/57fc7dd8bfd8fdc83a13e2ec906dcc125c476356.jpg" group-title="辉哥妍姐",2023毕业敬茶
-https://upos-sz-mirror08c.bilivideo.com/upgcxcode/90/67/28275836790/28275836790-1-192.mp4?e=ig8euxZM2rNcNbNMhwdVhwdlhbKVhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1739009036&gen=playurlv2&os=08cbv&oi=2018263300&trid=323c80dd9fac47bdab7bc0ff56ef3c5aT&mid=3546773916224428&platform=html5&og=hw&upsig=8ca5fcca815cd4e2422d55e2a7c635be&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,mid,platform,og&bvc=vod&nettype=0&bw=245403&orderid=0,1&buvid=&build=0&mobi_app=&f=T_0_0&logo=80000000
+#EXTINF:-1 tvg-id="1" tvg-name="辉辉妍妍" tvg-logo="https://i2.hdslb.com/bfs/archive/57fc7dd8bfd8fdc83a13e2ec906dcc125c476356.jpg" group-title="辉哥妍姐",时光音乐会第四季20241227
+https://v.cdnlz21.com/20241227/3347_e29dd446/index.m3u8
 #EXTINF:-1 tvg-id="1" tvg-name="CCTV1" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV1.png" group-title="央视",中央一台
 http://150.138.8.143/00/SNM/CHANNEL00000311/index.m3u8
 http://150.138.8.143/00/SNM/CHANNEL00000001/index.m3u8
