@@ -1,46 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="1" tvg-name="" tvg-logo="" group-title="时光音乐会·老友记 纯享版2023",20230909
-https://mycj-m3u8.hmrvideo.com/play/fe1a75cb3ed3418895890c369559da08.m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="" tvg-logo="" group-title="时光音乐会·老友记 纯享版2023",20230916
-https://mycj-m3u8.hmrvideo.com/play/5f4c4005af0e411eb8b941d766e65e88.m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="" tvg-logo="" group-title="时光音乐会·老友记 纯享版2023",20230923
-https://mycj-m3u8.hmrvideo.com/play/26da26f40b814496b201f993496ed429.m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="" tvg-logo="" group-title="时光音乐会·老友记 纯享版2023",20230930
-https://mycj-m3u8.hmrvideo.com/play/773efc28c69c48dc97269dbf4f1ea583.m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="" tvg-logo="" group-title="时光音乐会·老友记 纯享版2023",20231007
-https://mycj-m3u8.hmrvideo.com/play/f36d56ce8f544a6882ff2cdc914824be.m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="" tvg-logo="" group-title="时光音乐会·老友记 纯享版2023",202314
-https://mycj-m3u8.hmrvideo.com/play/1af9feef24fb4639acb7fdd60c85a857.m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="" tvg-logo="" group-title="时光音乐会·老友记 纯享版2023",20231021
-https://mycj-m3u8.hmrvideo.com/play/589af579dede4462b1137503fdcc7f8b.m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="" tvg-logo="" group-title="时光音乐会·老友记 纯享版2023",20231028
-https://mycj-m3u8.hmrvideo.com/play/793576ff50864ef5b82ed349f772d658.m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="" tvg-logo="" group-title="时光音乐会·老友记 纯享版2023",20231104
-https://mycj-m3u8.hmrvideo.com/play/af979a3107ea414d9adaf20cbb24f952.m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="" tvg-logo="" group-title="时光音乐会·老友记 纯享版2023",20231111
-https://mycj-m3u8.hmrvideo.com/play/f00656ad48f241498ea0cda4865d5dec.m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="" tvg-logo="" group-title="时光音乐会·老友记 纯享版2023",20231118
-https://mycj-m3u8.hmrvideo.com/play/dd3e0e1477094186815430e5d1ef0e7f.m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="" tvg-logo="" group-title="时光音乐会·老友记 纯享版2023",20231125
-https://mycj-m3u8.hmrvideo.com/play/bdaa465d3e9e4cc2aa610806dae274aa.m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="辉辉妍妍" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV1.png" group-title="辉哥妍姐",中央一台
-http://150.138.8.143/00/SNM/CHANNEL00000311/index.m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="辉辉妍妍" tvg-logo="https://gitlab.com/uploads/-/system/user/avatar/16930155/avatar.png" group-title="辉哥妍姐",2023.09.10谷里时尚买手节童装品牌日
-https://live.video.weibocdn.com/76ceff35-0887-4d53-9ac9-7c12db2f5782_index.m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="辉辉妍妍" tvg-logo="https://5b0988e595225.cdn.sohucs.com/images/20191129/4d95708a342946519fefa42033240089.jpeg" group-title="辉哥妍姐",《哪吒之魔童闹海》线路一
-https://hn.bfvvs.com/play/NbWYAwEe/index.m3u8
-#EXTINF:-1 tvg-id="2" tvg-name="辉辉妍妍" tvg-logo="https://n.sinaimg.cn/sinakd20250204s/13/w807h806/20250204/4cb8-3a0cc80e29cafdb27ba68740e4fac0b4.jpg" group-title="辉哥妍姐",《哪吒之魔童闹海》线路二
-https://c1.7bbffvip.com/video/nazhazhimotongnaohai/TC/index.m3u8
-#EXTINF:-1 tvg-id="3" tvg-name="辉辉妍妍" tvg-logo="https://wx2.sinaimg.cn/mw1024/6ee583acly8gregxxnubjj20e80e8tdl.jpg" group-title="辉哥妍姐",《2022半岛网络春晚15:56:10》
-https://live.video.weibocdn.com/44ec997b-4907-47cc-b0e7-71bb327f9bb0_index.m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="辉辉妍妍" tvg-logo="https://wx2.sinaimg.cn/mw1024/6ee583acly8gregxxnubjj20e80e8tdl.jpg" group-title="辉哥妍姐",big-buck-bunny
-https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="辉辉妍妍" tvg-logo="https://wx2.sinaimg.cn/mw1024/6ee583acly8gregxxnubjj20e80e8tdl.jpg" group-title="辉哥妍姐",哪吒2预告片
-https://lx-sycdn.kuwo.cn/416ccfe9c654ada1e4f396298f8b6e79/67c122c4/resource/m3/33/80/3441260547.mp4
-#EXTINF:-1 tvg-id="1" tvg-name="辉辉妍妍" tvg-logo="https://wx2.sinaimg.cn/mw1024/6ee583acly8gregxxnubjj20e80e8tdl.jpg" group-title="辉哥妍姐",2023父亲节
-https://live.video.weibocdn.com/69b21df1-535f-4af3-98cf-320d00b8d653_index.m3u8
-#EXTINF:-1 tvg-id="1" tvg-name="辉辉妍妍" tvg-logo="https://i2.hdslb.com/bfs/archive/57fc7dd8bfd8fdc83a13e2ec906dcc125c476356.jpg" group-title="辉哥妍姐",时光音乐会第四季20241227
-https://v.cdnlz21.com/20241227/3347_e29dd446/index.m3u8
+
 #EXTINF:-1 tvg-id="1" tvg-name="CCTV1" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV1.png" group-title="央视",中央一台
 http://150.138.8.143/00/SNM/CHANNEL00000311/index.m3u8
 http://150.138.8.143/00/SNM/CHANNEL00000001/index.m3u8
@@ -509,3 +468,51 @@ http://150.138.8.143/00/SNM/CHANNEL00000704/index.m3u8
 http://150.138.8.143/00/SNM/CHANNEL00000646/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="其他",体育赛事
 http://150.138.8.143/00/SNM/CHANNEL00002013/index.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="" tvg-logo="" group-title="时光音乐会·老友记 纯享版2023",20230909
+https://mycj-m3u8.hmrvideo.com/play/fe1a75cb3ed3418895890c369559da08.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="" tvg-logo="" group-title="时光音乐会·老友记 纯享版2023",20230916
+https://mycj-m3u8.hmrvideo.com/play/5f4c4005af0e411eb8b941d766e65e88.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="" tvg-logo="" group-title="时光音乐会·老友记 纯享版2023",20230923
+https://mycj-m3u8.hmrvideo.com/play/26da26f40b814496b201f993496ed429.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="" tvg-logo="" group-title="时光音乐会·老友记 纯享版2023",20230930
+https://mycj-m3u8.hmrvideo.com/play/773efc28c69c48dc97269dbf4f1ea583.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="" tvg-logo="" group-title="时光音乐会·老友记 纯享版2023",20231007
+https://mycj-m3u8.hmrvideo.com/play/f36d56ce8f544a6882ff2cdc914824be.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="" tvg-logo="" group-title="时光音乐会·老友记 纯享版2023",202314
+https://mycj-m3u8.hmrvideo.com/play/1af9feef24fb4639acb7fdd60c85a857.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="" tvg-logo="" group-title="时光音乐会·老友记 纯享版2023",20231021
+https://mycj-m3u8.hmrvideo.com/play/589af579dede4462b1137503fdcc7f8b.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="" tvg-logo="" group-title="时光音乐会·老友记 纯享版2023",20231028
+https://mycj-m3u8.hmrvideo.com/play/793576ff50864ef5b82ed349f772d658.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="" tvg-logo="" group-title="时光音乐会·老友记 纯享版2023",20231104
+https://mycj-m3u8.hmrvideo.com/play/af979a3107ea414d9adaf20cbb24f952.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="" tvg-logo="" group-title="时光音乐会·老友记 纯享版2023",20231111
+https://mycj-m3u8.hmrvideo.com/play/f00656ad48f241498ea0cda4865d5dec.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="" tvg-logo="" group-title="时光音乐会·老友记 纯享版2023",20231118
+https://mycj-m3u8.hmrvideo.com/play/dd3e0e1477094186815430e5d1ef0e7f.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="" tvg-logo="" group-title="时光音乐会·老友记 纯享版2023",20231125
+https://mycj-m3u8.hmrvideo.com/play/bdaa465d3e9e4cc2aa610806dae274aa.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="辉辉妍妍" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV1.png" group-title="辉哥妍姐",中央一台
+http://150.138.8.143/00/SNM/CHANNEL00000311/index.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="辉辉妍妍" tvg-logo="https://gitlab.com/uploads/-/system/user/avatar/16930155/avatar.png" group-title="辉哥妍姐",2023.09.10谷里时尚买手节童装品牌日
+https://live.video.weibocdn.com/76ceff35-0887-4d53-9ac9-7c12db2f5782_index.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="辉辉妍妍" tvg-logo="https://5b0988e595225.cdn.sohucs.com/images/20191129/4d95708a342946519fefa42033240089.jpeg" group-title="辉哥妍姐",《哪吒之魔童闹海》线路一
+https://hn.bfvvs.com/play/NbWYAwEe/index.m3u8
+#EXTINF:-1 tvg-id="2" tvg-name="辉辉妍妍" tvg-logo="https://n.sinaimg.cn/sinakd20250204s/13/w807h806/20250204/4cb8-3a0cc80e29cafdb27ba68740e4fac0b4.jpg" group-title="辉哥妍姐",《哪吒之魔童闹海》线路二
+https://c1.7bbffvip.com/video/nazhazhimotongnaohai/TC/index.m3u8
+#EXTINF:-1 tvg-id="3" tvg-name="辉辉妍妍" tvg-logo="https://wx2.sinaimg.cn/mw1024/6ee583acly8gregxxnubjj20e80e8tdl.jpg" group-title="辉哥妍姐",《2022半岛网络春晚15:56:10》
+https://live.video.weibocdn.com/44ec997b-4907-47cc-b0e7-71bb327f9bb0_index.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="辉辉妍妍" tvg-logo="https://wx2.sinaimg.cn/mw1024/6ee583acly8gregxxnubjj20e80e8tdl.jpg" group-title="辉哥妍姐",big-buck-bunny
+https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="辉辉妍妍" tvg-logo="https://wx2.sinaimg.cn/mw1024/6ee583acly8gregxxnubjj20e80e8tdl.jpg" group-title="辉哥妍姐",哪吒2预告片
+https://lx-sycdn.kuwo.cn/416ccfe9c654ada1e4f396298f8b6e79/67c122c4/resource/m3/33/80/3441260547.mp4
+#EXTINF:-1 tvg-id="1" tvg-name="辉辉妍妍" tvg-logo="https://wx2.sinaimg.cn/mw1024/6ee583acly8gregxxnubjj20e80e8tdl.jpg" group-title="辉哥妍姐",2023父亲节
+https://live.video.weibocdn.com/69b21df1-535f-4af3-98cf-320d00b8d653_index.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="辉辉妍妍" tvg-logo="https://i2.hdslb.com/bfs/archive/57fc7dd8bfd8fdc83a13e2ec906dcc125c476356.jpg" group-title="辉哥妍姐",时光音乐会第四季20241227
+https://v.cdnlz21.com/20241227/3347_e29dd446/index.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="唐探1900" tvg-logo="https://m.ykimg.com/0584000068075B0F13EFA31604ECFC3C" group-title="辉哥妍姐",电影
+https://vip.ffzy-video.com/20250430/17125_a4ad68f6/index.m3u8
+https://vip.ffzy-video.com/20250430/17125_a4ad68f6/2000k/hls/mixed.m3u8
+#EXTINF:-1 tvg-id="1" tvg-name="哪吒2：魔童闹海" tvg-logo="https://jppicc17tche.gkan.net/330/upload/vod/20250101-1/7045a60793e9a804da5693a4e311972c.webp" group-title="辉哥妍姐",电影
+https://vip.ffzy-play6.com/20250406/35083_57315eba/index.m3u8
+https://vip.ffzy-play6.com/20250406/35083_57315eba/3000k/hls/mixed.m3u8
