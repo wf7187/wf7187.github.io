@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>六分区图片轮播展示站</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>六分区图片轮播展示站</h1>
+    </header>
+
+    <main class="wrap">
+        <!-- 分区1 -->
+        <section class="carousel-box" data-folder="folder1">
+            <h2>分区一</h2>
+            <div class="carousel">
+                <div class="carousel-list"></div>
+                <button class="btn prev">&lt;</button>
+                <button class="btn next">&gt;</button>
+            </div>
+        </section>
+        <!-- 分区2 -->
+        <section class="carousel-box" data-folder="folder2">
+            <h2>分区二</h2>
+            <div class="carousel">
+                <div class="carousel-list"></div>
+                <button class="btn prev">&lt;</button>
+                <button class="btn next">&gt;</button>
+            </div>
+        </section>
+        <!-- 分区3 -->
+        <section class="carousel-box" data-folder="folder3">
+            <h2>分区三</h2>
+            <div class="carousel">
+                <div class="carousel-list"></div>
+                <button class="btn prev">&lt;</button>
+                <button class="btn next">&gt;</button>
+            </div>
+        </section>
+        <!-- 分区4 -->
+        <section class="carousel-box" data-folder="folder4">
+            <h2>分区四</h2>
+            <div class="carousel">
+                <div class="carousel-list"></div>
+                <button class="btn prev">&lt;</button>
+                <button class="btn next">&gt;</button>
+            </div>
+        </section>
+        <!-- 分区5 -->
+        <section class="carousel-box" data-folder="folder5">
+            <h2>分区五</h2>
+            <div class="carousel">
+                <div class="carousel-list"></div>
+                <button class="btn prev">&lt;</button>
+                <button class="btn next">&gt;</button>
+            </div>
+        </section>
+        <!-- 分区6 -->
+        <section class="carousel-box" data-folder="folder6">
+            <h2>分区六</h2>
+            <div class="carousel">
+                <div class="carousel-list"></div>
+                <button class="btn prev">&lt;</button>
+                <button class="btn next">&gt;</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- 大图弹窗 -->
+    <div class="modal" id="imgModal">
+        <span class="close-btn">&times;</span>
+        <img class="modal-img" id="modalImg">
+    </div>
+
+    <footer class="site-footer">
+        <p>图片存放于 images 下6个独立文件夹 | Gitee Pages部署</p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

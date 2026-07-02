@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #f4f7fa;
+    font-family: "Microsoft YaHei", sans-serif;
+}
+.site-header {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 15px;
+}
+.site-header h1 {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+/* 基础布局：手机默认单列 */
+.wrap {
+    max-width: 1600px;
+    margin: 30px auto;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+.carousel-box {
+    width: 100%;
+}
+.carousel-box h2 {
+    margin-bottom: 12px;
+    color: #222;
+    font-size: clamp(16px, 2vw, 18px);
+    text-align: center;
+}
+
+/* 宽度大于1300px电脑端：强制两列平分页面 */
+@media (min-width: 1300px) {
+    .wrap {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* 轮播容器100%填满父分区，完全自适应页面宽度 */
+.carousel {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+.carousel-list {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+/* 一屏固定3张图，每张占容器1/3宽度，图片自动跟随分区缩放 */
+.carousel-item {
+    flex: 0 0 calc(100% / 3);
+    padding: clamp(6px, 1vw, 10px);
+    position: relative;
+    transition: all 0.45s ease;
+}
+
+.carousel-image-wrap {
+    width: 100%;
+    height: clamp(130px, 16vw, 170px);
+    overflow: hidden;
+    border-radius: 12px;
+}
+.carousel-image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.45s ease, filter 0.45s ease;
+    border-radius: inherit;
+}
+
+/* 非居中图片缩小、变暗区分层级 */
+.carousel-item:not(.center) .carousel-image-wrap img {
+    transform: scale(0.75);
+    filter: brightness(0.7);
+}
+/* 分区正中焦点图放大1.5倍 + 边缘径向毛玻璃虚化 */
+.carousel-item.center {
+    z-index: 2;
+}
+.carousel-item.center .carousel-image-wrap img {
+    transform: scale(1.5);
+    filter: brightness(1.05);
+    mask-image: radial-gradient(circle, rgba(0,0,0,1) 68%, rgba(0,0,0,0) 100%);
+    -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 68%, rgba(0,0,0,0) 100%);
+    box-shadow: 0 0 22px rgba(0, 0, 0, 0.4);
+}
+.carousel-item.center img:hover {
+    transform: scale(1.55);
+}
+
+/* 切换按钮自适应尺寸 */
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: clamp(32px, 5vw, 36px);
+    height: clamp(32px, 5vw, 36px);
+    border-radius: 50%;
+    border: none;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    font-size: clamp(16px, 3vw, 18px);
+    cursor: pointer;
+    z-index: 10;
+}
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
+
+/* 大图弹窗 */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    z-index: 999;
+}
+.modal-img {
+    display: block;
+    max-width: 92%;
+    max-height: 92vh;
+    margin: 40px auto;
+}
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: clamp(32px, 8vw, 42px);
+    color: #fff;
+    cursor: pointer;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 24px 15px;
+    color: #666;
+    margin-top: 50px;
+    font-size: clamp(13px, 2vw, 15px);
+}
+
+/* 手机端紧凑优化 */
+@media (max-width: 650px) {
+    .wrap {
+        gap: 25px;
+        margin: 20px auto;
+    }
+}
