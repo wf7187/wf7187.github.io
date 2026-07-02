@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wf7187 - 个人主页</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 流星背景容器 -->
+    <div class="night-bg"></div>
+
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <button class="menu-toggle" aria-label="打开导航菜单" aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
+        <ul class="nav-links" aria-hidden="true">
+            <li><a href="#home" class="nav-link">首 页</a></li>
+            <li><a href="#portfolio" class="nav-link">作 品</a></li>
+            <li><a href="#about" class="nav-link">关 于</a></li>
+            <li><a href="#contact" class="nav-link">联 系</a></li>
+        </ul>
+        <div class="menu-overlay"></div>
+    </nav>
+
+    <!-- 主内容 -->
+    <main class="main-content">
+        <section class="banner" id="home">
+            <div class="banner-content">
+                <img src="avatar.jpg" alt="" class="avatar">
+                <h1>你好呀，个人Web学习，欢迎访问</h1>
+                <p>一名前端学习爱好者，持续记录网页开发练习作品</p>
+                <button class="cta-button" id="goWork">查看作品</button>
+            </div>
+        </section>
+
+        <!-- 作品板块 - data-url替换为你的作品在线地址 -->
+        <section class="section portfolio" id="portfolio">
+            <h2 class="section-title">我的作品</h2>
+            <div class="work-list">
+                <div class="work-item" data-url="https://wf7187.github.io/web/index.html">
+                    <div class="work-thumb">
+                        <img class="snap-img" src="" alt="作品预览" loading="lazy">
+                    </div>
+                    <div class="work-desc">
+                        <h3>本网站快照</h3>
+                        <p>欢迎查看</p>
+                    </div>
+                </div>
+                <div class="work-item" data-url="https://anes.wabaowa.com">
+                    <div class="work-thumb">
+                        <img class="snap-img" src="" alt="作品预览" loading="lazy">
+                    </div>
+                    <div class="work-desc">
+                        <h3>练习网页2</h3>
+                        <p>小资料</p>
+                    </div>
+                </div>
+                <div class="work-item" data-url="https://git.wabaowa.com/">
+                    <div class="work-thumb">
+                        <img class="snap-img" src="" alt="作品预览" loading="lazy">
+                    </div>
+                    <div class="work-desc">
+                        <h3>交互小案例</h3>
+                        <p>JS动画交互效果</p>
+                    </div>
+                </div>
+<!-- 第四个作品，标记使用不同接口 -->
+                <div class="work-item use-urlscan" data-url="https://git.wabaowa.com/web/img/love_1.jpg">
+                    <div class="work-thumb">
+                        <img class="snap-img" src="" alt="作品预览" loading="lazy">
+                    </div>
+                    <div class="work-desc">
+                        <h3>综合实战页面</h3>
+                        <p>多组件整合完整项目</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about" id="about">
+            <h2 class="section-title">关于我</h2>
+            <p>专注Web前端学习，练习HTML/CSS/JS动画、响应式页面开发，星空个人主页为练手项目。</p>
+        </section>
+
+        <section class="section contact" id="contact">
+            <h2 class="section-title">联系方式</h2>
+            <p>邮箱：wf7187@163.com</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
